@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PeerChat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='lobby.css'>
+    <link rel='stylesheet' media='screen' href='./css/pretrial.css'>
 </head>
+
 <body>
-    
+
     <main id="lobby-container">
         <div id="form-container">
             <div id="form__container__header">
@@ -17,7 +19,7 @@
 
             <div id="form__content__wrapper">
                 <form id="join-form">
-                    <input type="text" name="invite_link" required/>
+                    <input type="text" name="invite_link" required />
                     <input type="submit" value="Join Room" />
                 </form>
             </div>
@@ -34,7 +36,7 @@
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         let inviteCode = e.target.invite_link.value
-        window.location = `index.html?room=${inviteCode}` 
+        window.location = `pretrial.html?room=${inviteCode}`
     })
 </script>
 
